@@ -1,0 +1,31 @@
+.box-1 {
+    background: rgb(14, 163, 156);
+    color: white;
+    height: 90px;
+    font-size: 1.7em;
+    margin-bottom: .4em;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    margin-left: 50px;
+}
+.grillas {
+    margin-bottom: 30px;
+}
+.style-col {
+    border:  1px solid rgba(48, 48, 48, .8);
+    height: 55px;
+}
+.style-row {
+    margin-bottom: 50px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.card-element {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+}

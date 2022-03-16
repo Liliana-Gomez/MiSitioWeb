@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Roboto: ital, wght @ 1,100 & display = swap "rel =" stylesheet ">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Roboto: ital, wght @ 1,400 & display = swap "rel =" stylesheet ">
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fuentes.html">fuentes</a></li> 
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="colores.html">Colores</a></li>
+        <li><a href="alineacion.html">Alineacion</a></li>
+        <li><a href="spacing.html">Espaciado</a></li>
+        <li><a href="margins-padding-borders.html">Margin border and padding</a></li>
+        <li><a href="indent-blockquote.html">Texto</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="contenedores.html">contenedores</a></li>
+        <li><a href="menu_horizontal.html">Menu</a></li>
+        <li><a href="menu-vertical.html">Menu Vertical</a></li>
+        <li><a href="desafio.html">Desafio</a></li>
+        <li><a href="menu-responsive.html">Menu Responsive</a></li>
+        <li><a href="background-1.html">Background-1</a></li>
+        <li><a href="background-2.html">Background-2</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="grid-areas.html">Grid-Areas</a></li>
+        <li><a href="grid-posicionamiento.html">grid-posicionamiento</a></li>
+        <li><a href="grid-min-max.html">Grid-min-max</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="grid-repeat.html">Gread-Repeat</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="grid-maquetación.html">Maquetacion</a></li>
+        <li><a href="grid-maquetacion2.html">Maquetacion-2</a></li>
+        <li><a href="bootstrap_elementos.html">Bootstrap_Elementos</a></li>
+    </ul>
+</nav>
+<div class="main-content">
+    <h1>Tiquetes De Viajes</h1>
+    <form> 
+        <fieldset>
+<div class="box-formulario">
+        <!-- <label>Ingrese su(s) nombre(s)</label><br> -->
+        <input class="controls-check" type="text" name="Nombres" placeholder="Ingrese su(s) Nombre(s)"><br><br>
+        <!--<label>Ingrese su(s) apellido(s)</label><br> -->
+        <input class="controls-check" type="text" name="Apellios"placeholder="Ingrese su(s) Apellido(s)"><br><br>
+        <!-- <label>Observaciones</label><br> -->
+        <textarea class="controls-check" name="observaciones" cols="40" rows="5" maxlength="200" placeholder="Observaciones(max.200 caracteres)"></textarea><br><br>
+        <label>Lugares Disponibles</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="bogota">Bogota</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="cali">Cali</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="florencia">Florencia</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="villavicencio">Villavicencio</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="medellin">Medellin</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="popayan">Popayan</label><br><br>
+   <label><input class="controls-check" type="checkbox" value="neiva">Neiva</label><br><br>
+   <label>Dias Disponibles</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Lunes</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Martes</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Miercoles</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Jueves</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Viernes</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Sabado</label><br><br>
+   <label><input class="controls-check" type="radio" name="lunes">Domingo</label><br><br>
+   <label>Seleccione Hora </label><br>
+   <select class="contros" name="hora">
+       <option value="07:00am">07:00am</option>
+       <option value="09:0pm">07:00pm</option>
+       <option value="11:00am">07:00am</option>
+       <option value="01:00am">07:00am</option>
+       <option value="03:00am">07:00am</option>
+       <option value="05:00pm">07:00pm</option>
+       <option value="10:00pm">07:00pm</option>   
+   </select><br><br>
+   <input class="controls-button" type="submit" value="enviar">
+    </div>
+    </fieldset>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    margin: 0% 4em;
+}
+h1 {
+    text-align: center;
+}
+.alineacion-izquierda {
+    text-align: left;
+}
+.alineacion-derecha {
+    text-align: right;
+}
+.alineacion-centro {
+    text-align: center;
+}
+.alineacion-justificado {
+    text-align: justify;
+}

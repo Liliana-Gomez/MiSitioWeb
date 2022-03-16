@@ -1,0 +1,62 @@
+fieldset {
+    width: 80%;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+.codigo {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 73px;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+    
+}
+.carac {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:100px;
+    width: 70%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.valor {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:100px;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.valor1 {
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left:80px;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.code {
+    margin-top: 80px;
+    padding: 30px;
+    margin-left: 1px;
+    
+}
+
+.table-style {
+    display: block;
+    padding: 10px;
+    border-collapse: collapse;
+
+}
+td, th {
+    border: 2px solid black;
+    background-color:rgb(23, 59, 47);
+    
+}

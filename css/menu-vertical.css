@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    border-right: 1px solid rgb(48, 48, 48, .6);
+    width: 300px;
+    overflow: auto;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    width: 95%;
+}
+a {
+    text-decoration: none;
+    color: rgb(67, 66, 67);
+    font-size: 1em;
+    display: block;
+    border-radius: 5px;
+    padding: 17px 35px;
+    font-family: 'roboto', sans-serif;
+} 
+a:hover {
+    background: gainsboro;
+}
+.main-content {
+    margin: 40px 40px 40px 320px;
+    text-align: justify;
+    color: black;
+    background-color:  rgb(221, 215, 215) ;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+.fas, .fab {
+    width: 30px;
+    font-size: 1.2em;
+}
+i {
+    padding-right: 30px;
+}
+.linea-item {
+    border-radius: 0;
+    border-top: 1px solid rgb(48, 48, 48, .6);
+} 
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    src: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> ; /*IE9 C0mpat Modes */
+}
+/* roboto-500-latin */
+@font-face  {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 500;
+    src: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> ;
+}

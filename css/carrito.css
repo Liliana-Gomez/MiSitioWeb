@@ -1,0 +1,116 @@
+.carrito {
+    border: 2px solid rgb(22, 22, 22);
+
+    max-width: 1000px;
+    width: 650px;
+    margin-top: 12%;
+    margin-left: 20px;
+    top: 90%;
+    margin-right: 25%;
+    border-radius: 30px;
+
+}
+
+
+.subTotal{
+   
+    font-size: 27px;
+    margin-left: 10px;
+
+}
+.punto {
+    font-size: 30px;
+}
+.contenedor2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid aquamarine;
+    height: 50px;
+border-radius: 8px;
+
+    background-color: aquamarine;
+}
+.pago {
+    margin-top: 30px;
+    margin-bottom: 10px;
+   
+    
+    font-size: 28px;
+    text-align: center;
+    margin-left: 24%;
+   
+}
+.contenedor3 {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 50px;
+    color: black;
+    
+}
+.text {
+    font-size: 18px;
+}
+.num{
+    font-size: 25px;
+}
+.contenedor4{
+    position: absolute;
+    margin-left: 440px;
+    margin-top: 320px;
+}
+.elim{
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    background-color:rgb(60, 207, 158);
+    padding: 8px 40px;
+    font-size:23px;
+    border-radius: 10px;
+    border: 1px solid;
+    
+    
+}
+
+.img{
+    margin-top: 60px;
+    margin-left: 18px;
+    
+
+}
+.botones {
+margin-top: 10px;
+margin-left: 40px;
+margin-right: 446px;
+margin-bottom: 50px;
+
+
+
+
+}
+.sumRest {
+    background-color: rgb(230, 228, 228);
+    text-decoration: none;
+    padding: 4px 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    
+}
+.valor {
+    background-color: white;
+    text-decoration: none;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    
+}
+
+.elim:hover {
+    background-color: rgb(195, 194, 194);
+}
+
+.contenedor {
+    margin-left: 240px;
+    
+}

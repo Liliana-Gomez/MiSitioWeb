@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 9em auto;
+    width: 500px;
+    border: 1px solid rgb(19, 18, 18);
+    box-shadow: -.5px 3px 5px #cfbbbb;
+    
+
+}
+.title {
+    text-align: center;
+    margin: .8em 0;
+
+}
+.calendar {
+   display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+
+
+}
+.day {
+    list-style: none;
+    text-align: center;
+    padding: .6em .5em;
+    border: 2px solid rgb(116, 112, 112);
+    background-color: rgb(21, 219, 203);
+}
+.day-name {
+    background-color: rgb(36, 230, 156);
+    font-weight: 100;
+    text-align: center;
+}
+.firs-day {
+    grid-column-start: 3;
+}
+.day-festivo {
+    background-color: rgb(42, 91, 199);
+    color: rgb(245, 242, 241);
+}
+.day:hover{
+    background-color: rgb(99, 188, 240);
+}
+.day-festivo:hover {
+    background-color:rgb(76, 113, 114); ;
+}
+.day-festiv {
+    background-color: rgb(233, 103, 43);
+    color: white;
+}
+.day-festiv:hover{
+    background-color: rgb(188, 226, 21);
+}
+

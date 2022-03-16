@@ -1,0 +1,16 @@
+/* color llamado por su nombre... */
+p {
+    font-size:3em;
+}
+.color-azul {
+    color:rgb(36, 153, 207)
+}
+.color-verde {
+    color:rgb(121, 228, 21)
+}
+.color-gris {
+    color:#646464;
+}
+.color-avianca {
+    color: rgb(222,1,8);
+}
