@@ -6,6 +6,7 @@ fieldset {
 }
 h1 {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,'Courier New', Courier, monospace
 }
 
 .codigo {
@@ -49,14 +50,20 @@ h1 {
     
 }
 
+.text1{
+    margin-left: 120px;
+}
+
 .table-style {
     display: block;
-    padding: 10px;
+    margin: 30px auto;
+    width: 70%;
+    padding: 18px;
     border-collapse: collapse;
 
 }
 td, th {
     border: 2px solid black;
-    background-color:rgb(23, 59, 47);
-    
+    background-color:rgb(12, 83, 60);
+    padding: 20px;
 }

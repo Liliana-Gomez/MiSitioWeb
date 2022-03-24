@@ -102,22 +102,22 @@ function validarFormulario(){
     }
     let inputDescripcion = document.getElementById("descripcion").value.trim();
     if(inputDescripcion ==""){
-    alert("por favor ingrese la descripcion del producto");
+    alert("por favor ingrese la descripcion del producto").focus();
 }
 
     let inputValor = document.getElementById("valor").value.trim();
     if(inputValor ==""){
-    alert("por favor ingrese el valor del producto");
+    alert("por favor ingrese el valor del producto").focus();
     }
-    let inputUnidad = document.getElementById("unidadesStock").value.trim();
-    if(inputUnidad ==""){
-    alert("por favor ingrese el codigo del producto");
-}
+    let inputUnidadesStock = document.getElementById("unidadesStock").value.trim();
+    if(inputUnidadesStock ==""){
+    alert("por favor ingrese el codigo del producto").focus();
 
 return false;
 }
   return true; 
 }
+
   
  
    
