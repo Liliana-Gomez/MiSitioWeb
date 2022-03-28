@@ -1,18 +1,29 @@
 .encabezado {
     width: 100%;
     padding: 8px;
-    background-color: rgb(18, 133, 108);
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    outline: none;
 }
-.texbusqueda {
-    border-radius: 15px;
-    width: 50%;
-    padding: 13px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px gray;
+.tex {
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    outline: none;
+    border-radius: 20px;
 }
 .icon-menu {
     margin-left: 20%;
     margin-top: 20%;
     
+}
+.img {
+    margin: 0 auto;
+    display: block;
+    width: 1500px;
+
+
 }
