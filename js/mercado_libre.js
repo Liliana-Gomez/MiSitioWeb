@@ -9,7 +9,7 @@ class Motocicleta {
 let moto = new Motocicleta ("Honda", "CB", "$ 15000000", "img/honda.png");
 
 function validarHonda () {
-    alert(moto.Marca + "" + moto.Modelo + ""  + " la motocicleta que necesitas¡¡");
+    alert(moto.Marca + "" + moto.Modelo + ""  + " la motocicleta que necesitas!!");
     
     mostrarHonda();
 }

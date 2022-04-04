@@ -30,8 +30,17 @@ function crearEncabezado() {
 
     nodoTabla.setAttribute("class", "table-style");
     nodoTabla.setAttribute("id" , "table-stock");
+
+    // limpiarFormulario();
     
 }
+// function limpiarFormulario() {
+//     document.getElementById("codigo").value = "";
+//     document.getElementById("descripcion").value="";
+//     document.getElementById("valor").value="";
+//     document.getElementById("unidadesStock").focus();
+
+// }
 function validarTabla() {
     if (!document.getElementById("table-stock")) {
         crearEncabezado();
@@ -84,35 +93,45 @@ function cargarInfoTabla(codigo, descripcion,valor, unidad) {
     nodoUnidadTD.appendChild(unidad);
 
     limpiarFormulario();
+
 }
-
-
-
-function limpiarFormulario(){
-    document.getElementById("codigo").evalue="";
-    document.getElementById("descripcion").evalue="";
-    document.getElementById("valor").evalue="";
-    document.getElementById("unidadesStock").evalue="";
+function limpiarFormulario() {
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value="";
+    document.getElementById("valor").value="";
+    document.getElementById("unidadesStock").value="";
 }
 
 function validarFormulario(){
     let inputCodigo = document.getElementById("codigo").value.trim();
     if(inputCodigo ==""){
     alert("por favor ingrese el codigo del producto").focus();
-    }
-    let inputDescripcion = document.getElementById("descripcion").value.trim();
-    if(inputDescripcion ==""){
-    alert("por favor ingrese la descripcion del producto").focus();
+
+
+
+    
+
+
+    // return false;
+
+
 }
 
-    let inputValor = document.getElementById("valor").value.trim();
-    if(inputValor ==""){
-    alert("por favor ingrese el valor del producto").focus();
-    }
-    let inputUnidadesStock = document.getElementById("unidadesStock").value.trim();
-    if(inputUnidadesStock ==""){
-    alert("por favor ingrese el codigo del producto").focus();
+//   return true; 
+let inputDescripcion = document.getElementById("descripcion").value.trim();
+if(inputDescripcion ==""){
+alert("por favor ingrese LA descripcion del producto").focus();
 
+
+} 
+let inputValor = document.getElementById("valor").value.trim();
+if(inputValor ==""){
+alert("por favor ingrese el valor del producto").focus();
+}
+
+let inputUnidadesStock = document.getElementById("unidadesStock").value.trim();
+if(inputUnidadesStock ==""){
+alert("por favor ingrese   las unidades del producto").focus();
 return false;
 }
   return true; 
