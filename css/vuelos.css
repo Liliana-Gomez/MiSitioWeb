@@ -101,7 +101,8 @@ text-align: center;
 .style-conytentVuelo{
     display: grid;
     grid-template-columns:repeat(6, 1fr) ;
-    grid-template: "styleOrige  styleDestino stylePrecio"   25px/
+    grid-template: "styleOrige  styleDestino" 1fr
+                     "stylePrecio"   25px/
                         200px    150px     150px;
                      
 }
