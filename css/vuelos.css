@@ -1,10 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fas{
+display: block;
+padding: 15px;
+color: black;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns:repeat(6, 1fr) ;
+    grid-template:  "avion  viajes   ofertas  ayuda    campana  bars" /
+                     2fr     200px    150px     150px     80px      80px;
+  
+     width: 100%;   
+    margin: 0 auto;  
+    background-color: rgb(24, 79, 146);                    
+} 
+
+.fab{
+    grid-area: avion;
+    border: 1px solid  black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 70px;
+    font-size: 25px;
+    
+}
+.viajes{
+    grid-area: viajes;
+    margin: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ofertas{
+    grid-area: ofertas;
+    margin: 3px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.ayuda {
+    grid-area: ayuda;
+    margin: 3px;
+}
+.fa-bell {
+    grid-area: campana;
+    margin: 3px;
+
+}
+.fa-bars{
+    grid-area: bars;
+    margin: 3px;
+}
+.fas:hover {
+    background-color: rgb(44, 31, 224);
+}.fab{
+    grid-area: avion;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 70px;
+    font-size: 25px;
+    
+}
+.viajes{
+    grid-area: viajes;
+    border: none;
+   
+}
+.ofertas{
+    grid-area: ofertas;
+    border: none;
+}
+.ayuda {
+    grid-area: ayuda;
+    border: none;
+}
+.fa-bell {
+    grid-area: campana;
+    margin: 3px;
+    border: none;
+
+}
+.fa-bars{
+    grid-area: bars;
+    margin: 3px;
+}
+.fas:hover {
+    background-color: rgb(16, 76, 155);
+}
+
+
+
+
+
 .style-conytentVuelo{
     display: grid;
-    grid-template:"styleOrige" 25px /
-                      1fr;
+    grid-template-columns:repeat(6, 1fr) ;
+    grid-template: "styleOrige  styleDestino stylePrecio"   25px/
+                        200px    150px     150px;
+                     
 }
 
 .styleOrigen{
+    grid-area:styleOrigen ;
     display: grid;
     font-size: 1.5em;
+}
+
+.styleDestino{
+    grid-area: styleDestino ;
+    font-size: 1.5em;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+}
+.stylePrecio{
+    grid-area: stylePrecio;
+    font-size: 1.5em;
+    display:grid;
 }
