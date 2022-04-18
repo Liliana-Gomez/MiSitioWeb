@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.encabezado {
+    width: 100%;
+    padding: 6px;
+    background-color: transparent;
+    border:none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    outline: none;
+}
+
+.bt-menu {
+    right: 5px;
+    width: 900px;
+   height: 40px;
+    text-align: left;
+    font-size: 17px;
+    outline: none;
+    color: rgb(149, 141, 141);
+   font-family:'Times New Roman', Times, serif;
+}
+
+.transform4 {
+position: absolute;
+bottom: 40px;
+right: 10px;
+width: 50px;
+height: 50px;
+background-color: transparent;
+transition: transform 1s, width 1s, height 1s;
+border: 1px solid black;
+}
+.transform5{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(25, 173, 192);
+    transition: width 600ms, height 600ms;
+    width: 300px;
+    height: 300px;
+}
+.botonCerrar {
+    display: none;
+}
+.botonCerrarVisible {
+    display: block;
+    cursor: pointer;
+}
+#botonForm{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.boton {
+    
+}
+.homcenter {
+    width: 10px;
+    padding:10px;
+}

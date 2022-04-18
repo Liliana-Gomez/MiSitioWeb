@@ -47,7 +47,7 @@
 }
 
 .transform4:hover {
-    transform: scale(5, 3);
+    transform: translate(200px, 100px);
     cursor: pointer;
     transition: width 5s, transform 5s;
 }
