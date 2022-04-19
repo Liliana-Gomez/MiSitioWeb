@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avianca</title>
     <link rel="stylesheet" href="css/vuelos.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="stylesheet" href="fonts/style.css">
     
-    <script src="https://kit.fontawesome.com/47910d8a72.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-      <div class="contenedor">
-        <a href="#"><i class="fas fab fa-plane"> Avianca</i></a>
-        <a class="fas viajes" href="#">Mis viajes</a>
-        <a class="fas ofertas" href="#">Ofertas</a>
-        <a class=" fas ayuda" href="#">Ayuda</a>
-        <a href="#"><i class="fas fa-bell"></i></a>
-        <a href="#"><i class="fas fa-bars"></i></a>
+
+    <div class="encabezado" >
+        <a href="#"><i class="fas fa icon-aircraft-take-off"> Avianca</i></a>
+        <a class="fas icon-help" href=""><br> Ayuda</a>
+        <a class="fas icon-phone" href=""> <br> Contactanos</a>
+        <a class="fas icon-menu" href="#"> <br> Menú</a>
     </div>
-    
-<div id="main_content">
-    
-        <input type="button" value="Cargar vuelos" onclick= "mostrarVuelos()">
+
+
+
+    <div id="main_content">
+    <input class="boton" type="button" value="Mostrar Vuelos"  onclick="mostrarVuelos();">
     </div>
+
     <script src="js/vuelos.js"></script>
 </body>
 </html>

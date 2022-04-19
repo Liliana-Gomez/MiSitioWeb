@@ -11,6 +11,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     outline: none;
+   
 }
 .tex {
     border: none;
@@ -18,18 +19,13 @@
     font-size: 17px;
     outline: none;
     border-radius: 20px;
+    display: grid;
 }
 .icon-menu {
     margin-left: 20%;
     margin-top: 20%;
-    
 }
 
-img {
-
-
-
-}
 
 .bt-menu {
     border-radius: 200px;
