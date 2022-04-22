@@ -1,66 +1,183 @@
+/* .transform1 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    
+    transition: transform 1s;
+}
+.transform2 {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    transition: transform 1s;
+}
+.transform3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(250, 143, 143);
+    transition: width 1s, height 1s, transform 1s;
+
+
+
+}
+
+.transform1:hover {
+    transform: translate(100px, 0);
+    cursor: pointer;
+    
+}
+.transform2:hover {
+    transform: scale(5,2);
+    cursor: pointer;
+}
+.transform3:hover {
+    transition: width 1s, height 1s, transform 1s;
+    transform: translate(1%, -1%);
+    width: 150px;
+    height: 150px;
+} */
 * {
     margin: 0;
     padding: 0;
 }
-.encabezado {
-    width: 100%;
-    padding: 6px;
-    background-color: transparent;
-    border:none;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
-    outline: none;
-}
 
-.bt-menu {
-    right: 5px;
-    width: 900px;
-   height: 40px;
-    text-align: left;
+.Contenedor {
+    border: 1px solid gainsboro;
+    height: 70px;
+    display: grid;
+    grid-template:"img   buscador cuenta" /
+                            1fr       2fr      60px;
+}
+.img{
+    grid-area: img;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.bus{
+    padding: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 2%;
     font-size: 17px;
     outline: none;
-    color: rgb(149, 141, 141);
-   font-family:'Times New Roman', Times, serif;
+    
+}
+.buscador{
+    grid-area: buscador;
+
+    
 }
 
-.transform4 {
-position: absolute;
-bottom: 40px;
-right: 10px;
-width: 50px;
-height: 50px;
-background-color: transparent;
-transition: transform 1s, width 1s, height 1s;
-border: 1px solid black;
+.cuenta{
+    grid-area: cuenta;
+    font-size: 23px;
+    margin-top: 40%;
+    cursor: pointer;
+    color: rgb(155, 154, 154);
 }
+.transform4{
+    
+    border: 1px solid black;
+    
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    width: 0px;
+    height: 0px;
+    transition: transform 20ms, width 600ms, height 600ms; 
+    
+
+    /* display: none; */
+}
+/* .raya{
+    border: 8px;
+    display: none;
+} */
 .transform5{
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     right: 10px;
     width: 50px;
     height: 50px;
-    background-color: rgb(25, 173, 192);
-    transition: width 600ms, height 600ms;
-    width: 300px;
-    height: 300px;
+    border: 1px solid black;
+    transition: width  700ms,  height  700ms;
+    width: 350px;
+    height: 650px;
+ 
 }
+
 .botonCerrar {
     display: none;
+    grid-area: boton;
+   
+    
+    
 }
 .botonCerrarVisible {
-    display: block;
+    /* display: block; */
     cursor: pointer;
+    /* text-align: center; */
+    color: white;
+    background-color: rgb(26, 168, 168);
+    border-radius: top 15px;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    
 }
 #botonForm{
     position: absolute;
     bottom: 10px;
     right: 10px;
+    border-radius: 15px;
 }
-.boton {
+.ana{
+   border: 1px solid white;
+    
+   font-size: 20px; 
+   width: 80px;
+   background-color: white;
+   color: rgb(75, 125, 170);
+   cursor: pointer;
+}
+.div2{
+   
+    border: 1px solid rgb(215, 215, 215);
+    margin: auto 5px;
+    
+   
+    
+   
+}
+.styleDesc{
+   text-align: justify;
+   padding: auto;
+   display: none;
+}
+.contenedorx{
+    background-color: rgb(26, 168, 168);
+    
+    display: grid;
+    grid-template: "menuu   img    boton" /
+                     1fr   1fr    1fr;
+                     
+    width: 100%;
     
 }
-.homcenter {
-    width: 10px;
-    padding:10px;
+.img{
+    grid-area: img;
+
+    
+    
+}
+.fas{
+    grid-area: menuu ;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+.imgen {
+    margin-top: 10px;
 }
