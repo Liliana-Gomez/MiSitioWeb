@@ -6,7 +6,7 @@ class Motocicleta {
         this.Imagen = imagen;
     }
 }
-let moto = new Motocicleta ("Honda", "CB", "$ 15000000", "img/honda.png");
+let moto = new Motocicleta ("Honda", "CB", "$ 15000000cop", "img/honda.png");
 
 function validarHonda () {
     alert(moto.Marca + "" + moto.Modelo + ""  + " la motocicleta que necesitas!!");
@@ -14,28 +14,33 @@ function validarHonda () {
     mostrarHonda();
 }
 function mostrarHonda() {
-    let contentPrincipal = document.getElementById("main_content");
+    let contentPrincipal = document.getElementById("content");
     let contentMoto      = document.createElement("div");
     contentPrincipal.appendChild(contentMoto);
+    contentMoto.setAttribute("class", "style-content");
 
     let marcaMoto = document.createElement("label");
     contentMoto.appendChild(marcaMoto);
     let textMarca = document.createTextNode(moto.Marca);
     marcaMoto.appendChild(textMarca);
+    marcaMoto.setAttribute("class", "styleMarca");
 
     let modeloMoto =  document.createElement("label");
     contentMoto.appendChild(modeloMoto);
     let textModelo  =  document.createTextNode(moto.Modelo);
     modeloMoto.appendChild(textModelo);
+    modeloMoto.setAttribute("class", "styleModelo");
 
     let precioMoto = document.createElement("label");
     contentMoto.appendChild(precioMoto);
     let textMoto = document.createTextNode(moto.Precio);
     precioMoto.appendChild(textMoto);
+    precioMoto.setAttribute("class", "stylePrecio");
 
     let imagenMoto  = document.createElement("img");
     contentMoto.appendChild(imagenMoto);
     imagenMoto.setAttribute("src", moto.Imagen);
+    imagenMoto.setAttribute("class", "styleimagen");
 }
 
 let bajaj = new Motocicleta ("Bajaj", "Pulsar", "$ 19.800.000", "img/pulsar-ns.png");
@@ -47,7 +52,7 @@ function validarBajaj () {
 }
 
 function mostrarBajaj () {
-    let contenedorPrinBajaj = document.getElementById("main_content");
+    let contenedorPrinBajaj = document.getElementById("content");
     let contentBajaj       = document.createElement("div");
     contenedorPrinBajaj.appendChild(contentBajaj);
 
@@ -78,7 +83,7 @@ function mostrarBajaj () {
  }
 
 function mostarAKT () {
-    let contenedorPrincAKT = document.getElementById("main_content");
+    let contenedorPrincAKT = document.getElementById("content");
     let contnedorAKT = document.createElement("div");
     contenedorPrincAKT.appendChild(contnedorAKT);
 
@@ -131,5 +136,5 @@ window.addEventListener("keydown", function(event) {
 
 
 function limpiarVentana () {
-    document.getElementById("main_content").innerHTML = "" ;
+    document.getElementById("content").innerHTML = "" ;
 }

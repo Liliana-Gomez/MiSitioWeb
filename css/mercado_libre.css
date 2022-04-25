@@ -2,6 +2,56 @@
     margin: 0;
     padding: 0;
 }
+.style-content {
+    display: grid;
+    grid-template: " styleimagen   styleModelo styleMarca   " 20px
+                   "  styleimagen   empty stylePrecio     " 20px/
+                   1fr         1fr           1fr  ;
+                   margin-bottom: 50px;
+                   border-radius: 10px;
+                   padding: 30px;
+                   font-size: 1.4em;
+                }
+
+ .styleimagen {
+    grid-area: styleimagen;
+
+text-align: left;
+width: 500px;
+border: 1px solid rgba(22, 22, 22, 0.808);
+
+ }
+
+ .styleModelo {
+    grid-area: styleModelo;
+    cursor: pointer;
+    font-size: 16px;
+    font-size: 1.5em;
+    text-emphasis: center;
+    margin-left:150px;
+    margin-top: 180px;
+   
+ }
+
+ .styleMarca {
+    grid-area: styleMarca;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-size: 27px;
+    text-align: left;
+    margin-top: 180px;
+    margin-left:-350px;
+ }
+ .stylePrecio {
+    grid-area: stylePrecio;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-size: 27px;
+    text-align: left;
+    margin-left:-350px;
+    margin-top: 180px;
+ }
+
 .encabezado {
     width: 100%;
     padding: 8px;

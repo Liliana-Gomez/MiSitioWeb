@@ -1,41 +1,4 @@
-/* .transform1 {
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
-    
-    transition: transform 1s;
-}
-.transform2 {
-    width: 50px;
-    height: 50px;
-    background-color: bisque;
-    transition: transform 1s;
-}
-.transform3 {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(250, 143, 143);
-    transition: width 1s, height 1s, transform 1s;
 
-
-
-}
-
-.transform1:hover {
-    transform: translate(100px, 0);
-    cursor: pointer;
-    
-}
-.transform2:hover {
-    transform: scale(5,2);
-    cursor: pointer;
-}
-.transform3:hover {
-    transition: width 1s, height 1s, transform 1s;
-    transform: translate(1%, -1%);
-    width: 150px;
-    height: 150px;
-} */
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +15,11 @@
     grid-area: img;
     margin-top: 10px;
     margin-left: 30px;
+
+}
+.principal {
+    width: 100%;
+
 }
 .bus{
     padding: 10px;
@@ -88,12 +56,9 @@
     transition: transform 20ms, width 600ms, height 600ms; 
     
 
-    /* display: none; */
+    
 }
-/* .raya{
-    border: 8px;
-    display: none;
-} */
+
 .transform5{
     position: fixed;
     bottom: 40px;
@@ -115,9 +80,7 @@
     
 }
 .botonCerrarVisible {
-    /* display: block; */
     cursor: pointer;
-    /* text-align: center; */
     color: white;
     background-color: rgb(26, 168, 168);
     border-radius: top 15px;
