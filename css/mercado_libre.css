@@ -5,20 +5,21 @@
 .style-content {
     display: grid;
     grid-template: " styleimagen   styleModelo styleMarca   " 20px
-                   "  styleimagen   empty stylePrecio     " 20px/
-                   1fr         1fr           1fr  ;
+                   "  styleimagen   empty      stylePrecio     " 20px/
+                     1fr                1fr           1fr  ;
                    margin-bottom: 50px;
                    border-radius: 10px;
                    padding: 30px;
                    font-size: 1.4em;
+                   border: 2px solid black;
                 }
 
  .styleimagen {
     grid-area: styleimagen;
-
 text-align: left;
 width: 500px;
-border: 1px solid rgba(22, 22, 22, 0.808);
+border: 2px solid black;
+
 
  }
 
@@ -28,8 +29,8 @@ border: 1px solid rgba(22, 22, 22, 0.808);
     font-size: 16px;
     font-size: 1.5em;
     text-emphasis: center;
-    margin-left:150px;
-    margin-top: 180px;
+    margin-left:100px;
+ 
    
  }
 
@@ -38,18 +39,20 @@ border: 1px solid rgba(22, 22, 22, 0.808);
     cursor: pointer;
     font-size: 1.2em;
     font-size: 27px;
-    text-align: left;
+    text-emphasis: right;
     margin-top: 180px;
-    margin-left:-350px;
+    margin-left:-200px;
+    display: grid;
  }
  .stylePrecio {
     grid-area: stylePrecio;
     cursor: pointer;
     font-size: 1.2em;
     font-size: 27px;
-    text-align: left;
-    margin-left:-350px;
+    text-emphasis: right;
+    margin-left:-250px;
     margin-top: 180px;
+    display: grid;
  }
 
 .encabezado {
@@ -65,7 +68,6 @@ border: 1px solid rgba(22, 22, 22, 0.808);
 }
 .tex {
     border: none;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     outline: none;
     border-radius: 20px;

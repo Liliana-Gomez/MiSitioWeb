@@ -6,7 +6,7 @@ class Motocicleta {
         this.Imagen = imagen;
     }
 }
-let moto = new Motocicleta ("Honda", "CB", "$ 15000000cop", "img/honda.png");
+let moto = new Motocicleta ("Honda", "MOTOCICLETA CB", "$ 15000000cop", "img/honda.png");
 
 function validarHonda () {
     alert(moto.Marca + "" + moto.Modelo + ""  + " la motocicleta que necesitas!!");
