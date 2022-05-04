@@ -144,3 +144,15 @@
 .imgen {
     margin-top: 10px;
 }
+.saludo {
+    border-radius: 2px;
+    box-shadow: black 0px 2px 8px 0px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   background-color: antiquewhite;
+   color: rgb(49, 48, 48);
+   margin-top: 300px;
+   margin-left:-5px;
+   text-align: center;
+   }

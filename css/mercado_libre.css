@@ -11,14 +11,15 @@
                    border-radius: 10px;
                    padding: 30px;
                    font-size: 1.4em;
-                   border: 2px solid black;
+                   box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px ;
                 }
 
  .styleimagen {
     grid-area: styleimagen;
 text-align: left;
 width: 500px;
-border: 2px solid black;
+box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px ;
+border-radius: 2px;
 
 
  }
