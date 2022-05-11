@@ -2,97 +2,76 @@
     margin: 0;
     padding: 0;
 }
-.style-content {
-    display: grid;
-    grid-template: " styleimagen   styleModelo styleMarca   " 20px
-                   "  styleimagen   empty      stylePrecio     " 20px/
-                     1fr                1fr           1fr  ;
-                   margin-bottom: 50px;
-                   border-radius: 10px;
-                   padding: 30px;
-                   font-size: 1.4em;
-                   box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px ;
-                }
-
- .styleimagen {
-    grid-area: styleimagen;
-text-align: left;
-width: 500px;
-box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px ;
-border-radius: 2px;
-
-
- }
-
- .styleModelo {
-    grid-area: styleModelo;
-    cursor: pointer;
-    font-size: 16px;
-    font-size: 1.5em;
-    text-emphasis: center;
-    margin-left:100px;
- 
-   
- }
-
- .styleMarca {
-    grid-area: styleMarca;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-size: 27px;
-    text-emphasis: right;
-    margin-top: 180px;
-    margin-left:-200px;
-    display: grid;
- }
- .stylePrecio {
-    grid-area: stylePrecio;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-size: 27px;
-    text-emphasis: right;
-    margin-left:-250px;
-    margin-top: 180px;
-    display: grid;
- }
-
-.encabezado {
-    width: 100%;
-    padding: 8px;
-    background-color: yellow;
-    border: none;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
-    outline: none;
-   
-}
-.tex {
-    border: none;
-    font-size: 17px;
-    outline: none;
-    border-radius: 20px;
-    display: grid;
-}
-.icon-menu {
-    margin-left: 20%;
-    margin-top: 20%;
-}
-
 
 .bt-menu {
-    border-radius: 200px;
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+}
+.encabezado {
+    display: grid;
+    background-color: yellow;
+    border-bottom: 1px solid rgba(175, 171, 171, 0.692);
+    height: auto;
+    grid-template:     "busqueda    icon"/
+                        2fr         150px;
+                        color: black;
+}
+
+.icon1 {
+    grid-area: icon;
+    padding: 17px;
+    margin-right: 80%;
+    color: black;
+}
+
+.textbusqueda{
+    grid-area: busqueda; 
+    color: black;
+    background-color: black;
+}
+.menu {
+    border-radius: 10px;
     border: none;
     margin: 15px 15%;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 55px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
     outline: none;
 }
-label {
-    font-size: 27px;
-    
+.contenMoto { 
+    display: grid;
+    height: auto;
+    grid-template: " img     descripcion " 30px
+                    "img     modelo" 30px
+                    "img     precio" 30px
+                    "img     empty auto"/
+                     6fr     8fr ;
+    margin-bottom: 20px;
+    border-radius: 7px;
+   box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px;
+   width: 80%;
+   padding: 90px;
+   margin-left:50px;
+   margin-top: 50px;
+
 }
-.grillas {
-    margin-bottom: 30px;
+.imagen {
+    grid-area: img;
+    margin-top: 20px;
+    flex: auto  ;
+}
+.descripcion { 
+        grid-area: descripcion;
+        display: inline-block;
+        width: 350px;
+        text-align: center;
+        margin-left: 30px;
+        font-size: 1.8em;
+}
+.precio {
+    grid-area: precio;
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
 }

@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista De Productos</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/lista-productos.css">
+    <script src="js/lista-productos.js"></script>
 </head>
 <body>
     <form>
-        <fieldset>
+        
+            <h1 >REGISTRO DE PRODUCTO</h1>
             <div class="contenedor">
-                <h1 >Registro de producto</h1>
-                <label class="code">codigo del  producto</label>
-                <input type="text" class="codigo" id="codigo">
+                
+                <div class="cod"><label class="code">CODIGO DEL PRODUCTO</label>
+                <input type="text" class="codigo" id="codigo"></div>
 
-                <label class="code" > Caracteristicas</label>
-                <input type="text" class="carac" id="descripcion">
+                <div class="des"><label class="code" > CARACTERISTICAS</label>
+                <input type="text" class="carac" id="descripcion"></div>
 
-                <label class="code" >valor_unitario</label>
-                <input type="text" class="valor" id="valor">
+                <div class="val"><label class="valoruni" >VALOR_UNITARIO</label>
+                <input type="text" class="valor" id="valor"></div>
 
-                <label class="code" >Unidades</label>
-                <input type="text" class="valor1" id="unidadesStock">
+                <div class="val1"><label class="text1" >   UNIDADES  </label>
+                <input type="text" class="valor1" id="unidadesStock"></div>
 
-                <input class="Boton" type="button" value="cargar" onclick="cargarProducto()">
-                <div id="table.js">
+                <div class="boton"><input class="Boton" type="button" value="Cargar" onclick="cargarProducto()">
+                <div id="table.js"></div>
 
                 </div>
 
             </div>
-        </fieldset>
+       
     </form>
-    <script src="js/lista-productos.js"></script>
 </body>
 </html>

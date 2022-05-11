@@ -1,4 +1,6 @@
-class Motocicleta {
+"Use strict"
+
+class Automovil {
     constructor (marca, modelo, precio, imagen) {
         this.Marca = marca ;
         this.Modelo = modelo;
@@ -6,135 +8,130 @@ class Motocicleta {
         this.Imagen = imagen;
     }
 }
-let moto = new Motocicleta ("Honda", "MOTOCICLETA CB", "$ 15000000cop", "img/honda.png");
 
-function validarHonda () {
-    alert(moto.Marca + "" + moto.Modelo + ""  + " la motocicleta que necesitas!!");
+let auto = new Automovil ("Yamaha ", "400RL ", "$ 10.0000.000", "img/yamaha.png");
+
+let fordMustang = new Automovil ("Suzuki ", "Clásico ", "$13.800.000", "img/suzuki.png");
+
+let chevrolet = new Automovil ("Pulsar-ns ", "Bajaj ", "$10.000.000", "img/pulsar-ns.png");
+
+function mostrarAuto() {
+    let contentPrincipal = document.getElementById("mainContent");
+    let contentAuto      = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenMoto");
     
-    mostrarHonda();
-}
-function mostrarHonda() {
-    let contentPrincipal = document.getElementById("content");
-    let contentMoto      = document.createElement("div");
-    contentPrincipal.appendChild(contentMoto);
-    contentMoto.setAttribute("class", "style-content");
+    let imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", auto.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
 
-    let marcaMoto = document.createElement("label");
-    contentMoto.appendChild(marcaMoto);
-    let textMarca = document.createTextNode(moto.Marca);
-    marcaMoto.appendChild(textMarca);
-    marcaMoto.setAttribute("class", "styleMarca");
+    let contentDescrip = document.createElement("div");
+    contentAuto.appendChild(contentDescrip);
+    contentDescrip.setAttribute("class", "descripcion")
 
-    let modeloMoto =  document.createElement("label");
-    contentMoto.appendChild(modeloMoto);
-    let textModelo  =  document.createTextNode(moto.Modelo);
-    modeloMoto.appendChild(textModelo);
-    modeloMoto.setAttribute("class", "styleModelo");
+    let marcaAuto = document.createElement("label");
+    contentDescrip.appendChild(marcaAuto);
+    let textMarca = document.createTextNode(auto.Marca);
+    marcaAuto.appendChild(textMarca);
 
-    let precioMoto = document.createElement("label");
-    contentMoto.appendChild(precioMoto);
-    let textMoto = document.createTextNode(moto.Precio);
-    precioMoto.appendChild(textMoto);
-    precioMoto.setAttribute("class", "stylePrecio");
+    let modeloAuto  =  document.createElement("label");
+    contentDescrip.appendChild(modeloAuto);
+    let textModelo  =  document.createTextNode(auto.Modelo);
+    modeloAuto.appendChild(textModelo);
 
-    let imagenMoto  = document.createElement("img");
-    contentMoto.appendChild(imagenMoto);
-    imagenMoto.setAttribute("src", moto.Imagen);
-    imagenMoto.setAttribute("class", "styleimagen");
-}
+    let precioAuto = document.createElement("label");
+    contentDescrip.appendChild(precioAuto);
+    let textAuto = document.createTextNode(auto.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 
-let bajaj = new Motocicleta ("Bajaj", "Pulsar", "$ 19.800.000", "img/pulsar-ns.png");
 
-function validarBajaj () {
-    alert (bajaj.Marca + " " + bajaj.Modelo + " " + "La motocicleta perfecto para salir de paseo con tu familia o amigos¡¡")
 
-    mostrarBajaj ();
-}
 
-function mostrarBajaj () {
-    let contenedorPrinBajaj = document.getElementById("content");
-    let contentBajaj       = document.createElement("div");
-    contenedorPrinBajaj.appendChild(contentBajaj);
 
-    let marcaBajaj = document.createElement("label");
-    contentBajaj.appendChild(marcaBajaj);
-    let textBajajMarca = document.createTextNode(bajaj.Marca);
-    marcaBajaj.appendChild(textBajajMarca);
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto  = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenMoto");
 
-    let modeloBajaj = document.createElement("label");
-    contentBajaj.appendChild(modeloBajaj);
-    let textModelBajaj= document.createTextNode(bajaj.Modelo);
-    modeloBajaj.appendChild(textModelBajaj);
+    imagenAuto = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", fordMustang.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
 
-    let precioBajaj = document.createElement("label");
-    contentBajaj.appendChild(precioBajaj);
-    let textBajaj= document.createTextNode(bajaj.Precio);
-    precioBajaj.appendChild(textBajaj);
+    contentDescrip = document.createElement("div");
+    contentAuto.appendChild(contentDescrip);
+    contentDescrip.setAttribute("class", "descripcion")
 
-    let imgBajaj = document.createElement("img");
-    contentBajaj.appendChild(imgBajaj);
-    imgBajaj.setAttribute("src", bajaj.Imagen)
-}
- let AKT = new Motocicleta ("AKT", "TT", "$ 24000000", "img/tt-akt.jpg");
- function validarAKT() {
-     alert (AKT.Marca + " " + AKT.Modelo + " " + "La moto mas eficaz en la carretera¡¡")
+    marcaAuto = document.createElement("label");
+    contentDescrip.appendChild(marcaAuto);
+    textMarca = document.createTextNode(fordMustang.Marca);
+    marcaAuto.appendChild(textMarca);
 
-     mostarAKT();
- }
+    modeloAuto  =  document.createElement("label");
+    contentDescrip.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(fordMustang.Modelo);
+    modeloAuto.appendChild(textModelo);
 
-function mostarAKT () {
-    let contenedorPrincAKT = document.getElementById("content");
-    let contnedorAKT = document.createElement("div");
-    contenedorPrincAKT.appendChild(contnedorAKT);
+    precioAuto = document.createElement("label");
+    contentDescrip.appendChild(precioAuto);
+    textAuto = document.createTextNode(fordMustang.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 
-    let marcaAKT = document.createElement("label");
-    contnedorAKT.appendChild(marcaAKT);
-    let textMarcaAKT = document.createTextNode(AKT.Marca);
-    marcaAKT.appendChild(textMarcaAKT);
 
-    let modeloAKT = document.createElement("label");
-    contnedorAKT.appendChild(modeloAKT);
-    let textModeloAKT = document.createTextNode(AKT.Modelo);
-    marcaAKT.appendChild(textModeloAKT);
 
-    let precioAKT = document.createElement("label");
-    contnedorAKT.appendChild(precioAKT);
-    let textPrecioAKT = document.createTextNode(AKT.Precio);
-    precioAKT.appendChild(textPrecioAKT);
+ 
 
-    let imgAKT = document.createElement("img");
-    contnedorAKT.appendChild(imgAKT);
-    imgAKT.setAttribute("src", AKT.Imagen)
+
+  
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto  = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenMoto");
+
+    imagenAuto = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", chevrolet.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescrip = document.createElement("div");
+    contentAuto.appendChild(contentDescrip);
+    contentDescrip.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescrip.appendChild(marcaAuto);
+    textMarca = document.createTextNode(chevrolet.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescrip.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(chevrolet.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescrip.appendChild(precioAuto);
+    textAuto = document.createTextNode(chevrolet.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 }
 
 window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if (event.key == "Enter") {
         limpiarVentana();
-        if (busqueda == "Motocicletas Disponibles" ) {
-            mostrarHonda(Honda);
-            mostrarBajaj(bajaj);
-            mostarAKT(AKT);
-        }
-        else if (busqueda == "Honda" ) {
-            mostrarHonda(moto);}
-        
-
-        if (busqueda == "Bajaj") {
-            mostrarBajaj(bajaj);}
-
-        else if (busqueda == "AKT") {
-            mostarAKT(AKT);
+        if (busqueda == "Motocicletas" ) {
+            mostrarAuto(auto, fordMustang, chevrolet);
         }
             
         else {
-              this.true;
-        } 
-        return this. false.alert("no se han encontrado resultados."); 
+              alert("Al parecer, no hay coincidencias para su busqueda."); 
     }
+}
 })
 
 
 function limpiarVentana () {
-    document.getElementById("content").innerHTML = "" ;
+    document.getElementById("mainContent").innerHTML = "" ;
 }

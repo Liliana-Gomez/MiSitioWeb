@@ -36,3 +36,38 @@ function ocultarForm(){
 }
 
 
+let buscadorForm = document.getElementById("buscadorForm");
+let div1 = document.getElementById("div1");
+
+let lupaCerrar = document.getElementById("lupaCerrar");
+
+
+lupaCerrar.addEventListener("click",mostrarform);
+
+
+
+function dezplegarBuscadorForm(){
+
+    document.getElementById("buscadorForm").classList.add("contenedor-fransform1");
+
+    document.getElementById("buscadorForm").classList.remove("contenedor-fransform1-out");
+
+    document.getElementById("buscadorForm").style.display="none";
+}
+
+function cerrarBuscadorForm(){
+    document.getElementById("buscadorForm").classList.remove("contenedor-fransform1");
+
+    document.getElementById("buscadorForm").classList.add("contenedor-fransform1-out");
+
+    document.getElementById("buscadorForm").style.display="flex";
+}
+btnRight.addEventListener('click',function(){
+    Next();
+});
+btnLeft.addEventListener('click',function(){
+    Prev();
+});
+setInterval(function(){
+    Next();
+},5000);
