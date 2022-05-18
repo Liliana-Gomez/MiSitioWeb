@@ -1,4 +1,4 @@
-"user strict"
+/*"user strict"
 let botonForm = document.getElementById("botonForm");
 let div4 = document.getElementById("div4");
 
@@ -35,39 +35,52 @@ function ocultarForm(){
 
 }
 
+*/
 
-let buscadorForm = document.getElementById("buscadorForm");
-let div1 = document.getElementById("div1");
+"use strict"
 
-let lupaCerrar = document.getElementById("lupaCerrar");
+let botonOpen = document.getElementById("chat-box-disable");
+let botonCerrar = document.getElementById("botonCerrar");
+let botonOpenHeader = document.getElementById("header-movil-open");
+let botonCerrarHeader = document.getElementById("boton-cerrar-header");
+let Header = document.getElementById("header");
 
+botonOpen.addEventListener("click", dezplegarCaja);
+botonCerrar.addEventListener("click", cerrarCaja);
 
-lupaCerrar.addEventListener("click",mostrarform);
+function dezplegarCaja(){
 
+    botonOpen.classList.add("chat-box-disable-in");
+    botonOpen.classList.remove("chat-box-disable-out");
+    document.getElementById("chat-box").classList.add("chat-box-in");
+    document.getElementById("chat-box").classList.remove("chat-box-out");
 
-
-function dezplegarBuscadorForm(){
-
-    document.getElementById("buscadorForm").classList.add("contenedor-fransform1");
-
-    document.getElementById("buscadorForm").classList.remove("contenedor-fransform1-out");
-
-    document.getElementById("buscadorForm").style.display="none";
 }
 
-function cerrarBuscadorForm(){
-    document.getElementById("buscadorForm").classList.remove("contenedor-fransform1");
+function cerrarCaja(){
+    
+    botonOpen.classList.remove("chat-box-disable-in");
+    botonOpen.classList.add("chat-box-disable-out");
+    document.getElementById("chat-box").classList.remove("chat-box-in");
+    document.getElementById("chat-box").classList.add("chat-box-out");
+};
 
-    document.getElementById("buscadorForm").classList.add("contenedor-fransform1-out");
+botonOpenHeader.addEventListener("click", dezplegarCajaHeader);
+botonCerrarHeader.addEventListener("click", cerrarCajaHeader);
 
-    document.getElementById("buscadorForm").style.display="flex";
+function dezplegarCajaHeader(){
+
+    document.getElementById("header-movil").classList.add("contenedor-barra-busqueda-movil");
+
+    document.getElementById("header-movil").classList.remove("contenedor-barra-busqueda-movil-out");
+
+    document.getElementById("header").style.display="none";
 }
-btnRight.addEventListener('click',function(){
-    Next();
-});
-btnLeft.addEventListener('click',function(){
-    Prev();
-});
-setInterval(function(){
-    Next();
-},5000);
+
+function cerrarCajaHeader(){
+    document.getElementById("header-movil").classList.remove("contenedor-barra-busqueda-movil");
+
+    document.getElementById("header-movil").classList.add("contenedor-barra-busqueda-movil-out");
+
+    document.getElementById("header").style.display="flex";
+}

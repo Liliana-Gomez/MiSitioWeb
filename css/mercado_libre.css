@@ -15,7 +15,7 @@
     height: auto;
     grid-template:     "busqueda    icon"/
                         2fr         150px;
-                        color: black;
+                    
 }
 
 .icon1 {
