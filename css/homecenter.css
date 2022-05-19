@@ -172,12 +172,6 @@
 }
 
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -299,7 +293,6 @@ header {
 .img-logo .menu-movil {
     font-size: 1.5em;
     margin-right: 30px;
-    cursor: pointer;
     padding: 10px;
     border-radius: 50%;
     transition: all 300ms;
@@ -612,7 +605,7 @@ header {
         height: 25px;
         padding: 1px 6px;
         margin-left: 10px;
-        cursor: pointer;
+       
     }
 
     .contenedor-barra-busqueda {

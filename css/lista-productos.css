@@ -1,8 +1,9 @@
 
 .contenedor{
-    flex: auto  ;
     border: 2.5px solid black;
     display: grid;
+    position: fixed;
+    height: auto;
     grid-template:"cod des" 
                   "val  val1"
                    "boton  boton" /
@@ -11,7 +12,7 @@
    width: 60%;
     margin-left: 5%;
     padding: 50px;
-    color: rgb(228, 26, 26);
+    color: rgb(11, 18, 85);
     font-family: 'Times New Roman', Times, serif;
    border-radius: 30px;
   

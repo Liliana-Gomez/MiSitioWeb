@@ -10,9 +10,10 @@
 }
 .encabezado {
     display: grid;
-    background-color: yellow;
+    background-color: yellow ;
     border-bottom: 1px solid rgba(175, 171, 171, 0.692);
     height: auto;
+
     grid-template:     "busqueda    icon"/
                         2fr         150px;
                     
@@ -42,20 +43,29 @@
 .contenMoto { 
     display: grid;
     height: auto;
-    grid-template: " img     descripcion " 30px
-                    "img     modelo" 30px
-                    "img     precio" 30px
-                    "img     empty auto"/
-                     6fr     8fr ;
-    margin-bottom: 20px;
-    border-radius: 7px;
-   box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px;
-   width: 80%;
-   padding: 90px;
-   margin-left:50px;
-   margin-top: 50px;
-
+    grid-template: "  descripcion precio" 30px 
+                         "modelo" 30px /
+                          1fr       1fr ;
+                              
+                          
 }
+.imagen { 
+    display: grid;
+    height: auto;
+    grid-template: "  img" 50px 
+                     "img" 50px 
+                     "img"/
+                     1fr  ;
+                     box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px;  
+                     width: 500px;   
+                     margin-top: 50px;
+                     margin-left:150px;
+}
+box-shadow: rgba(32, 77, 83, 0.514) 0px 2px 8px 0px;
+margin-left:50px;
+margin-top: 50px;
+margin-top: 50px;
+
 .imagen {
     grid-area: img;
     margin-top: 20px;
@@ -66,7 +76,8 @@
         display: inline-block;
         width: 350px;
         text-align: center;
-        margin-left: 30px;
+        margin-left:-30px;
+        margin-top: -200px;   
         font-size: 1.8em;
 }
 .precio {
